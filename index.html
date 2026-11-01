@@ -96,10 +96,10 @@ const FAM = { modern: 'Современные', tabletop: 'Настольные'
 const grid = document.getElementById('grid');
 const esc = s => String(s || '').replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
 function render(f) {
-  grid.innerHTML = DATA.filter(c => !f || c.family === f).map(c => `
+  grid.innerHTML = DATA.filter(c => !f || c.family === f).map((c, i) => `
     <article class="card">
       <button class="shot" data-src="${esc(c.img)}" aria-label="Открыть кадр: ${esc(c.name)}" ${c.img ? '' : 'disabled'}>
-        ${c.img ? `<img src="${esc(c.img)}" alt="Кадр концепта ${esc(c.name)}" loading="lazy">` : '<div class="wait">кадр рисуется</div>'}
+        ${c.img ? `<img src="${esc(c.img.replace('k/', 'k/s/'))}" alt="Кадр концепта ${esc(c.name)}" width="880" height="550" loading="${i < 2 ? 'eager' : 'lazy'}"${i < 2 ? ' fetchpriority="high"' : ''}>` : '<div class="wait">кадр рисуется</div>'}
       </button>
       <div class="body">
         <div class="head"><span class="num">${c.n}</span><h2>${esc(c.name)}</h2></div>

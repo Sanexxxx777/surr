@@ -8,19 +8,21 @@
   <title>Ачивки Настольного Сюрра</title>
   <meta name="description" content="Личный планшет настольщика: партии, ступени и отметки фестивалей. Демо для «Настольного Сюрра».">
   <link rel="icon" href="./art/D3.webp" type="image/webp">
-  <!-- the plate for this viewport only (view.ts: portrait = narrower than tall and under 900 px); the spec json rides along with the script -->
-  <link rel="preload" href="./plate/desk.json" as="fetch" crossorigin media="(orientation: landscape), (min-width: 900px)">
-  <link rel="preload" href="./plate/desk.webp" as="image" type="image/webp" media="(orientation: landscape), (min-width: 900px)">
-  <link rel="preload" href="./plate/phone.json" as="fetch" crossorigin media="(orientation: portrait) and (max-width: 899px)">
-  <link rel="preload" href="./plate/phone.webp" as="image" type="image/webp" media="(orientation: portrait) and (max-width: 899px)">
+  <!-- the plate for this viewport only; the same three queries pick it in plate/view.ts (pickPlate): keep them identical -->
+  <link rel="preload" href="./plate/desk.json" as="fetch" crossorigin media="(orientation: landscape) and (min-height: 500px)">
+  <link rel="preload" href="./plate/desk-w.webp" as="image" type="image/webp" media="(orientation: landscape) and (min-height: 500px)">
+  <link rel="preload" href="./plate/phone.json" as="fetch" crossorigin media="(orientation: portrait) and (max-width: 599px), (orientation: landscape) and (max-height: 499px)">
+  <link rel="preload" href="./plate/phone.webp" as="image" type="image/webp" media="(orientation: portrait) and (max-width: 599px), (orientation: landscape) and (max-height: 499px)">
+  <link rel="preload" href="./plate/tablet.json" as="fetch" crossorigin media="(orientation: portrait) and (min-width: 600px)">
+  <link rel="preload" href="./plate/tablet.webp" as="image" type="image/webp" media="(orientation: portrait) and (min-width: 600px)">
   <link rel="preload" href="./fonts/AlegreyaSans-700-cyr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/AlegreyaSans-800-cyr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Alegreya-cyr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./fonts/fonts.css">
   <style>#boot{z-index:5;color:#2b2c28;background:#e6dccb;place-content:center;justify-items:center;gap:16px;font:700 18px Alegreya Sans,system-ui,sans-serif;display:grid;position:fixed;inset:0}#boot i{background:#bcd043;border-radius:5px;width:26px;height:26px;animation:.7s cubic-bezier(.3,0,.7,1) infinite alternate boot-hop;box-shadow:0 4px #8fa425}@keyframes boot-hop{to{transform:translateY(-18px)rotate(90deg)}}@media (prefers-reduced-motion:reduce){#boot i{animation:none}}</style>
-  <script type="module" crossorigin src="./assets/main-BzMzYVto.js"></script>
+  <script type="module" crossorigin src="./assets/main-CsRKcfSv.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/art-l7XSff58.js">
-  <link rel="stylesheet" crossorigin href="./assets/main-Cwztbjak.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-D-hUT-TW.css">
 </head>
 <body>
   <div id="boot" aria-live="polite"><i></i>Раскладываем планшет</div>

@@ -8,7 +8,11 @@
   <title>Ачивки Настольного Сюрра</title>
   <meta name="description" content="Личный планшет настольщика: партии, ступени и отметки фестивалей. Демо для «Настольного Сюрра».">
   <link rel="icon" href="./art/D3.webp" type="image/webp">
-  <link rel="preload" href="./plate/desk.webp" as="image" type="image/webp">
+  <!-- the plate for this viewport only (view.ts: portrait = narrower than tall and under 900 px); the spec json rides along with the script -->
+  <link rel="preload" href="./plate/desk.json" as="fetch" crossorigin media="(orientation: landscape), (min-width: 900px)">
+  <link rel="preload" href="./plate/desk.webp" as="image" type="image/webp" media="(orientation: landscape), (min-width: 900px)">
+  <link rel="preload" href="./plate/phone.json" as="fetch" crossorigin media="(orientation: portrait) and (max-width: 899px)">
+  <link rel="preload" href="./plate/phone.webp" as="image" type="image/webp" media="(orientation: portrait) and (max-width: 899px)">
   <link rel="preload" href="./fonts/AlegreyaSans-700-cyr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/AlegreyaSans-800-cyr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Alegreya-cyr.woff2" as="font" type="font/woff2" crossorigin>

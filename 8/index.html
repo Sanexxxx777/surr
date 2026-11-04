@@ -11,21 +11,22 @@
   <title>Ачивки Настольного Сюрра</title>
   <meta name="description" content="Личный планшет настольщика: партии, ступени и отметки фестивалей. Демо для «Настольного Сюрра».">
   <link rel="icon" href="./art/D3.webp" type="image/webp">
-  <!-- the plate for this viewport only; the same three queries pick it in plate/view.ts (pickPlate): keep them identical -->
+  <!-- the plate for this viewport only; the same three queries pick it in plate/view.ts (pickPlate): keep them identical.
+       The light first copy (view.ts plateFiles): the sharp one is fetched after the board is up -->
   <link rel="preload" href="./plate/desk.json" as="fetch" crossorigin media="(orientation: landscape) and (min-height: 500px)">
-  <link rel="preload" as="image" imagesrcset="./plate/desk-w.webp 1x, ./plate/desk-w@2x.webp 2x" media="(orientation: landscape) and (min-height: 500px)">
+  <link rel="preload" href="./plate/desk-w-lo.webp" as="image" type="image/webp" fetchpriority="high" media="(orientation: landscape) and (min-height: 500px)">
   <link rel="preload" href="./plate/phone.json" as="fetch" crossorigin media="(orientation: portrait) and (max-width: 599px), (orientation: landscape) and (max-height: 499px)">
-  <link rel="preload" href="./plate/phone.webp" as="image" type="image/webp" media="(orientation: portrait) and (max-width: 599px), (orientation: landscape) and (max-height: 499px)">
+  <link rel="preload" href="./plate/phone-lo.webp" as="image" type="image/webp" fetchpriority="high" media="(orientation: portrait) and (max-width: 599px), (orientation: landscape) and (max-height: 499px)">
   <link rel="preload" href="./plate/tablet.json" as="fetch" crossorigin media="(orientation: portrait) and (min-width: 600px)">
-  <link rel="preload" href="./plate/tablet.webp" as="image" type="image/webp" media="(orientation: portrait) and (min-width: 600px)">
+  <link rel="preload" href="./plate/tablet-lo.webp" as="image" type="image/webp" fetchpriority="high" media="(orientation: portrait) and (min-width: 600px)">
   <link rel="preload" href="./fonts/AlegreyaSans-700-cyr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/AlegreyaSans-800-cyr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Alegreya-cyr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./fonts/fonts.css">
   <style>#boot{z-index:5;color:#2b2c28;background:#e6dccb;place-content:center;justify-items:center;gap:16px;font:700 18px Alegreya Sans,system-ui,sans-serif;display:grid;position:fixed;inset:0}#boot i{background:#bcd043;border-radius:5px;width:26px;height:26px;animation:.7s cubic-bezier(.3,0,.7,1) infinite alternate boot-hop;box-shadow:0 4px #8fa425}@keyframes boot-hop{to{transform:translateY(-18px)rotate(90deg)}}@media (prefers-reduced-motion:reduce){#boot i{animation:none}}</style>
-  <script type="module" crossorigin src="./assets/main-DjyPpfLC.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/art-CXf06Bbo.js">
-  <link rel="stylesheet" crossorigin href="./assets/main-CctDQnvY.css">
+  <script type="module" crossorigin src="./assets/main-BrWQ1uPs.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/art-TXvxXzWr.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-o4tAqEGW.css">
 </head>
 <body>
   <div id="boot" aria-live="polite"><i></i>Раскладываем планшет</div>

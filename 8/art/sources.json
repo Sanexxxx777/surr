@@ -1561,6 +1561,14 @@
       "changes": "Removed background and changed foreground colour."
     },
     {
+      "slug": "pawn",
+      "author": "lorc",
+      "source": "https://game-icons.net/1x1/lorc/pawn.html",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "changes": "Removed background and changed foreground colour."
+    },
+    {
       "slug": "pearl-necklace",
       "author": "delapouite",
       "source": "https://game-icons.net/1x1/delapouite/pearl-necklace.html",
@@ -2284,14 +2292,6 @@
       "slug": "ufo",
       "author": "delapouite",
       "source": "https://game-icons.net/1x1/delapouite/ufo.html",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-      "changes": "Removed background and changed foreground colour."
-    },
-    {
-      "slug": "uncertainty",
-      "author": "lorc",
-      "source": "https://game-icons.net/1x1/lorc/uncertainty.html",
       "license": "CC BY 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
       "changes": "Removed background and changed foreground colour."
@@ -3798,6 +3798,13 @@
       "rights": "Artwork belongs to its respective rights holders; used to identify the game."
     },
     {
+      "gameId": "hit",
+      "source": "https://tesera.ru/game/HIT-2024/",
+      "image": "https://tesera.ru/images/items/2300272,3/200x200xpa/photo1.jpg",
+      "title": "HIT",
+      "rights": "Artwork belongs to its respective rights holders; used to identify the game."
+    },
+    {
       "gameId": "monkeyland",
       "source": "https://tesera.ru/game/monkeyland/",
       "image": "https://tesera.ru/images/items/21214,3/200x200xpa/photo1.gif",
@@ -3942,6 +3949,13 @@
       "source": "https://tesera.ru/game/neon/",
       "image": "https://tesera.ru/images/items/2181667,3/200x200xpa/photo1.jpg",
       "title": "Неон / NEON ",
+      "rights": "Artwork belongs to its respective rights holders; used to identify the game."
+    },
+    {
+      "gameId": "bolshoy-kush",
+      "source": "https://tesera.ru/game/big-deal/",
+      "image": "https://tesera.ru/images/items/414242,3/200x200xpa/photo1.jpg",
+      "title": "Большой куш / Big Deal",
       "rights": "Artwork belongs to its respective rights holders; used to identify the game."
     },
     {

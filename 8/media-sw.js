@@ -1,9 +1,10 @@
-// Scope-bound, stale-while-revalidate cover cache. Never cache pages, scripts or user data.
+// Scope-bound, stale-while-revalidate cover and medal cache. Never cache pages, scripts or user data.
 const base = new URL('./', self.location.href);
 const coverPath = new URL('art/covers/', base).pathname;
+const medalPath = new URL('art/nemesis/', base).pathname;
 const cacheName = `surr-covers-v1:${base.pathname}`;
 const pending = new Map();
-const isCover = (url) => url.origin === base.origin && url.pathname.startsWith(coverPath) && url.pathname.endsWith('.webp');
+const isCover = (url) => url.origin === base.origin && (url.pathname.startsWith(coverPath) || url.pathname.startsWith(medalPath)) && url.pathname.endsWith('.webp');
 const cached = async (url) => {
   try { return await (await caches.open(cacheName)).match(url); } catch { return undefined; }
 };

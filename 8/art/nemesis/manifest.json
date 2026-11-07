@@ -1,0 +1,19 @@
+{
+  "tool": "OpenAI native imagegen",
+  "purpose": "Original illustrative achievement medals for the Nemesis demo; not official game artwork.",
+  "processing": "WebP encoding at quality 86, 640 x 640; original transparency preserved.",
+  "assets": [
+    {
+      "file": "signal-v1.webp",
+      "subject": "Deep-space cargo ship with an eclipsed planet."
+    },
+    {
+      "file": "escape-v1.webp",
+      "subject": "Single escape capsule leaving a spaceship."
+    },
+    {
+      "file": "repair-v1.webp",
+      "subject": "Wrench over a repaired engine coupling."
+    }
+  ]
+}

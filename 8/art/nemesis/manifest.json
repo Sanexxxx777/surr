@@ -15,5 +15,13 @@
       "file": "repair-v1.webp",
       "subject": "Wrench over a repaired engine coupling."
     }
-  ]
+  ],
+  "dioramas": {
+    "tool": "OpenAI native imagegen",
+    "assets": {
+      "bridge-v1.webp": "Bridge with eclipsed planet",
+      "hangar-v1.webp": "Escape pod launch bay",
+      "engine-v1.webp": "Repaired engine compartment"
+    }
+  }
 }

@@ -7,7 +7,6 @@ const cacheName = `surr-covers-v1:${base.pathname}`;
 const pending = new Map();
 function isArtwork(url) {
   if (url.origin !== base.origin) return false;
-  if (url.pathname.startsWith(artPath + 'paintings/') && /\/painted-[1-6]\.svg$/.test(url.pathname)) return true;
   if (!url.pathname.endsWith('.webp')) return false;
   return url.pathname.startsWith(coverPath) || illustrationFolders.some((path) => url.pathname.startsWith(path))
     || (url.pathname.startsWith(artPath) && /^[A-Z][0-9]\.webp$/.test(url.pathname.slice(artPath.length)));

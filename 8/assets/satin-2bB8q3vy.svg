@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <pattern id="satin" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-2 4 4-2M0 8 8 0M4 10 10 4" fill="none" stroke="#000" stroke-opacity=".3" stroke-width=".85"/>
+      <path d="M-1.6 4.4 4.4-1.6M.4 8.4 8.4.4M4.4 10.4 10.4 4.4" fill="none" stroke="#fff" stroke-opacity=".38" stroke-width=".65"/>
+      <path d="M1 5 3 3M5 5 7 3" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width=".3"/>
+      <path d="m3.6 4.4.8.8m-4 0 .8.8m4-4 .8.8" fill="none" stroke="#000" stroke-opacity=".24" stroke-width=".65"/>
+    </pattern>
+  </defs>
+  <path fill="url(#satin)" d="M0 0h16v16H0z"/>
+</svg>

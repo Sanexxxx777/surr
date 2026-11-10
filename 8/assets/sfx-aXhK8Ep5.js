@@ -1,0 +1,1 @@
+function e(e,t=1,n=1){}export{e as t};

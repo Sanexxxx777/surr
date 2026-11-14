@@ -2,22 +2,35 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://surr-bgg.site-check-worker.workers.dev; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- preview: noindex. At launch the owner sets VITE_ROBOTS=index, follow and VITE_SITE_URL in .env -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#fbf5e7">
   <!-- a light-only page: browsers with forced dark (Brave night mode, Chrome auto-dark) turned the ink white on the cream board (04.11) -->
   <meta name="color-scheme" content="only light">
   <meta name="darkreader-lock">
   <title>Ачивки Настольного Сюрра</title>
-  <meta name="description" content="Личный планшет настольщика: достижения, последние отметки и любимые темы. Демо для «Настольного Сюрра».">
+  <meta name="description" content="Достижения настольщика: подтяни свои партии с BoardGameGeek по нику и собери вышитые нашивки за любимые игры. Сайт канала «Настольный Сюрр».">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Настольный Сюрр">
+  <meta property="og:title" content="Ачивки Настольного Сюрра">
+  <meta property="og:description" content="Достижения настольщика: подтяни свои партии с BoardGameGeek по нику и собери вышитые нашивки за любимые игры. Сайт канала «Настольный Сюрр».">
+  <meta property="og:url" content="https://shulgin.is-a.dev/surr/8/">
+  <meta property="og:image" content="https://shulgin.is-a.dev/surr/8/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Вышитые нашивки за настольные игры и надпись «Ачивки настольщика»">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="./art/D3.webp" type="image/webp">
+  <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="preload" href="./fonts/Nunito-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/Caveat-cyr.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/Caveat-lat.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./fonts/fonts.css">
-  <style>#boot{z-index:5;color:#2b2c28;background:#fbf5e7;place-content:center;justify-items:center;gap:1rem;font:700 1.125rem Nunito,system-ui,sans-serif;display:grid;position:fixed;inset:0}#boot i{background:#bcd043;border-radius:.3125rem;width:1.625rem;height:1.625rem;animation:.7s cubic-bezier(.3,0,.7,1) infinite alternate boot-hop;box-shadow:0 4px #8fa425}@keyframes boot-hop{to{transform:translateY(-18px)rotate(90deg)}}@media (prefers-reduced-motion:reduce){#boot i{animation:none}}</style>
-  <script type="module" crossorigin src="./assets/index-BBxnPXtg.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Xu_B33qf.css">
+  <style>@font-face{font-family:Nunito;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/Nunito-cyrillic.woff2)format("woff2");unicode-range:U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116}@font-face{font-family:Nunito;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/Nunito-latin.woff2)format("woff2");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Nunito;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/Nunito-cyrillic.woff2)format("woff2");unicode-range:U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116}@font-face{font-family:Nunito;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/Nunito-latin.woff2)format("woff2");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Nunito;font-style:normal;font-weight:800;font-display:swap;src:url(fonts/Nunito-cyrillic.woff2)format("woff2");unicode-range:U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116}@font-face{font-family:Nunito;font-style:normal;font-weight:800;font-display:swap;src:url(fonts/Nunito-latin.woff2)format("woff2");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Nunito Head;font-style:normal;font-weight:400 900;font-display:swap;src:url(fonts/Nunito-cyrillic.woff2)format("woff2");unicode-range:U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116}@font-face{font-family:Nunito Head;font-style:normal;font-weight:400 900;font-display:swap;src:url(fonts/Nunito-latin.woff2)format("woff2");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Caveat;font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/Caveat-cyr.woff2)format("woff2");unicode-range:U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116}@font-face{font-family:Caveat;font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/Caveat-lat.woff2)format("woff2");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}#boot{z-index:5;color:#2b2c28;background:#fbf5e7;place-content:center;justify-items:center;gap:1rem;font:700 1.125rem Nunito,system-ui,sans-serif;display:grid;position:fixed;inset:0}#boot i{background:#bcd043;border-radius:.3125rem;width:1.625rem;height:1.625rem;animation:.7s cubic-bezier(.3,0,.7,1) infinite alternate boot-hop;box-shadow:0 4px #8fa425}@keyframes boot-hop{to{transform:translateY(-18px)rotate(90deg)}}@media (prefers-reduced-motion:reduce){#boot i{animation:none}}</style>
+  <script type="module" crossorigin src="./assets/index-D71bw57U.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BIfFqRXE.css">
 </head>
 <body>
   <div id="boot" aria-live="polite"><i></i>Открываем ачивки</div>

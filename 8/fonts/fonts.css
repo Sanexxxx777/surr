@@ -1,4 +1,4 @@
-/* Nunito (SIL OFL), Sasha's pick 05.11. One variable file per subset: the browser draws the weight each face
+/* Nunito (SIL OFL), the owner's pick. One variable file per subset: the browser draws the weight each face
    asks for, so the site's 500/700/800 render as Nunito 500/700/800 (600 lands on the 700 face), exactly as in the
    approved preview. 'Nunito Head' draws at the element's own weight. All faces share one URL: one download. */
 @font-face { font-family: 'Nunito'; font-style: normal; font-weight: 500; font-display: swap; src: url(Nunito-cyrillic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
